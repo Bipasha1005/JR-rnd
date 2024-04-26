@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JR: Title Tag</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>JR R&D</h1>
+    <nav class="auth">
+      <a href="#" onclick="openLoginPopup()">Login</a>
+      <a href="#" onclick="openSignupPopup()">Sign Up</a>
+    </nav>
+  </header>
+
+  <label for="categorySelect">Select category:</label>
+  <select id="categorySelect">
+    <option value="products">Products</option>
+    <option value="services">Services</option>
+  </select>
+
+  <main>
+    <div id="productsSection"></div>
+    <div id="servicesSection"></div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    function openLoginPopup() {
+    
+      window.open('login.html', 'Login', 'width=400,height=400');
+    }
+
+    function openSignupPopup() {
+     
+      window.open('signup.html', 'Sign Up', 'width=400,height=400');
+    }
+  </script>
+</body>
+</html>
