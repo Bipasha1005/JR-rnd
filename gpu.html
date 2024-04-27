@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Graphics Card Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #656566;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #686869;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      /* position: fixed; */
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1 {
+      color: #051729;
+    }
+
+    p {
+      color: #333;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background-color: #f5f7f5;
+      color: rgb(3, 3, 3);
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    .gpu-container {
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      height: 199px;
+    }
+
+    .gpu-container img {
+      max-width: 100%;
+      /* height: 400px; */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="dropdown">
+      <button class="dropbtn">Product</button>
+      <div class="dropdown-content">
+        <a href="mouse.html">Mouse</a>
+        <a href="gpu.html">GPU</a>
+        <a href="cpu.html">CPU</a>
+        <a href="keyboard.html">Keyboard</a>
+        <a href="pendrive.html">Pendrive</a>
+        <a href="power.html" target="_blank">Power Bank</a>
+      </div>
+    </div>
+    <h1>Graphics Card Blog</h1>
+
+  </header>
+
+  <main>
+    <div class="gpu-container">
+      <img src="gpu.jpg" alt="gpu">
+    </div>
+
+    <h2>Introduction to Graphics Card</h2>
+    <p>GPUs are specialized electronic circuits designed to accelerate computer graphics and image processing. They are also useful for non-graphic calculations, neural network training, and cryptocurrency mining due to their parallel structure.<a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">Read More...</a></p>
+
+    <h2>History of Graphics Card</h2>
+    <p>Since the 1970s, arcade system boards have utilized specialized graphics circuits, composited data together, and used a barrel shifter circuit to animate framebuffer graphics for games like Gun Fight and Space Invaders. The Namco Galaxian arcade system in 1979 supported RGB color, multi-colored sprites, and tilemap backgrounds.<a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">Read More...</a></p>
+
+    <h2>Computational functions</h2>
+    <p>GPUs, which have traditionally used transistors for 3D computer graphics calculations, now offer basic 2D acceleration and framebuffer capabilities. They were initially used for texture mapping and rendering polygons, but later added units for geometric calculations. Recent developments include programmable shaders, oversampling, and high-precision color spaces. GPU performance is affected by factors like connector pathways, clock signal frequency, memory cache size, and the number of streaming multiprocessors or compute units. Performance is typically measured in floating point operations per second (FLOPS), with 2010s and 2020s GPUs typically delivering performance in teraflops (TFLOPS).<a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">Read More...</a></p>
+
+    <h2>Conclusion</h2>
+    <p>GPUs are increasingly consuming energy, prompting CPU designers to focus on improving performance per watt. Intelligent techniques are needed to manage GPU power consumption, with 3DMark2006 score per watt being a useful measure. GPU designs are highly scalable, allowing multiple chips on the same video card or parallel video cards. Peak performance is limited by power draw and heat dissipation. GPU performance is sometimes measured in terms of CPU performance.<a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">Read More...</a></p>
+  </main>
+
+  <footer>
+    <p> © Blog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropbtn').click(function () {
+        $('.dropdown-content').toggle();
+      });
+    });
+  </script>
+</body>
+
+</html>

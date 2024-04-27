@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mouse Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #656566;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #686869;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      /* position: fixed; */
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1 {
+      color: #051729;
+    }
+
+    p {
+      color: #333;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background-color: #f5f7f5;
+      color: rgb(3, 3, 3);
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    .mouse-container {
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      /* height: 100vh; */
+    }
+
+    .mouse-container img {
+      max-width: 100%;
+      height: 199px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="dropdown">
+      <button class="dropbtn">Product</button>
+      <div class="dropdown-content">
+        <a href="mouse.html">Mouse</a>
+        <a href="gpu.html">GPU</a>
+        <a href="cpu.html">CPU</a>
+        <a href="keyboard.html">Keyboard</a>
+        <a href="pendrive.html">Pendrive</a>
+        <a href="power.html" target="_blank">Power Bank</a>
+      </div>
+    </div>
+    <h1>Mouse Blog</h1>
+
+  </header>
+
+  <main>
+    <div class="mouse-container">
+      <img src="mouse.jpg" alt="mouse">
+    </div>
+
+    <h2>Introduction to Mouse</h2>
+    <p>The term "mouse" was first used in 1965 in Bill English's "Computer-Aided Display Control" due to its resemblance to a mouse and its cord resembling its tail. The term also came about because the cursor on the screen was referred to as "CAT" and was seen as chasing the new desktop device. Modern usage always uses "mice" plural, with "mouses" being more common.<a href="https://en.wikipedia.org/wiki/Computer_mouse">Read More...</a></p>
+
+    <h2>History of mouse</h2>
+    <p>TThe term "mouse" was first used in 1965 in Bill English's "Computer-Aided Display Control" due to its resemblance to a mouse and its cord resembling its tail. The term also came about because the cursor on the screen was referred to as "CAT" and was seen as chasing the new desktop device. Modern usage always uses "mice" plural, with "mouses" being more common.<a href="https://en.wikipedia.org/wiki/Computer_mouse">Read More...</a></p>
+
+    <h2>Types of mouse</h2>
+    <p>Telefunken introduced their early ball mouse in 1968, sold as optional computer system equipment. Bill English created a ball mouse in 1972 while working for Xerox PARC. It replaced external wheels with a single, rotating ball, and became the predominant form used in personal computers. Xerox PARC also adopted a modern keyboard layout.<a href="https://en.wikipedia.org/wiki/Computer_mouse">Read More...</a></p>
+
+    <h2>Conclusion</h2>
+    <p>In 1988, the VTech Socrates educational video game console introduced a wireless mouse as an optional controller. In the early 1990s, the Super Nintendo Entertainment System and Nintendo 64 also featured a mouse. Sega, NEC, Sony, Nintendo, and Microsoft all released official mice for their consoles, including the PlayStation, Wii, and Xbox. These consoles allowed users to use any USB mouse with universal-wide mouse support using USB.<a href="https://en.wikipedia.org/wiki/Computer_mouse">Read More...</a></p>
+  </main>
+
+  <footer>
+    <p> © Blog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropbtn').click(function () {
+        $('.dropdown-content').toggle();
+      });
+    });
+  </script>
+</body>
+
+</html>

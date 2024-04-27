@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Power Bank Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #656566;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #686869;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      /* position: fixed; */
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1 {
+      color: #051729;
+    }
+
+    p {
+      color: #333;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background-color: #f5f7f5;
+      color: rgb(3, 3, 3);
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    .power-container {
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      height: 199px;
+    }
+
+    .power-container img {
+      max-width: 100%;
+      /* height: 400px; */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="dropdown">
+      <button class="dropbtn">Product</button>
+      <div class="dropdown-content">
+        <a href="mouse.html" target="_blank">Mouse</a>
+        <a href="gpu.html" target="_blank">GPU</a>
+        <a href="cpu.html" target="_blank">CPU</a>
+        <a href="keyboard.html" target="_blank">Keyboard</a>
+        <a href="pendrive.html" target="_blank">Pendrive</a>
+        <a href="power.html" target="_blank">Power Bank</a>
+      </div>
+    </div>
+    <h1>Power Bank Blog</h1>
+
+  </header>
+
+  <main>
+    <div class="power-container">
+      <img src="power.jpg" alt="power">
+    </div>
+
+    <h2>Introduction to Power Bank</h2>
+    <p>Powerbank sharing is the communal use of powerbanks, allowing users to rent a powerbank, charge their devices, and return them to any station. Introduced at the Las Vegas International Consumer Electronics Show in 2001, the industry is expected to generate 15.2 billion US dollars by 2027.<a href="https://insights.brick.tech/powerbank-sharing-101-the-components-history-and-statistics/">Read More...</a></p>
+
+    <h2>History of Power Bank</h2>
+    <p>Powerbanks were invented by Chinese company Pisen in 2001 to solve the problem of Antarctic expedition teams draining batteries in cold weather. Initially a bulky device, they revolutionized charging methods. Today, powerbanks are smaller and sleeker, making them more convenient and efficient for charging devices.<a href="https://insights.brick.tech/powerbank-sharing-101-the-components-history-and-statistics/#:~:text=The%20Origin%20behind%20powerbanks&text=Powerbanks%20started%20with%20a%20Chinese,up%20in%20the%20cold%20weather.">Read More...</a></p>
+
+    <h2>Technology</h2>
+    <p>Powerbank sharing is a system where users rent powerbanks by scanning a QR code on a station. Powerbank stations have SIM cards for reliable communication and tracking of rentals. The powerbank itself is pre-charged and can be easily charged. The software manages the business by monitoring statistics, detecting broken powerbanks, and identifying stations for repair. An app allows users to locate charging stations and track their rental history. This system ensures efficient and convenient charging for users, allowing them to save time and money on their powerbank rental.<a href="https://insights.brick.tech/powerbank-sharing-101-the-components-history-and-statistics/">Read More...</a></p>
+
+    <h2>Conclusion</h2>
+    <p>Powerbank-sharing is a popular alternative to purchasing a powerbank, driven by the sharing economy and increasing demand for portable devices. The market is expected to grow, with more charging stations in various locations.<a href="https://insights.brick.tech/powerbank-sharing-101-the-components-history-and-statistics/">Read More...</a></p>
+  </main>
+
+  <footer>
+    <p> © Keyboard Blog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropbtn').click(function () {
+        $('.dropdown-content').toggle();
+      });
+    });
+  </script>
+</body>
+
+</html>

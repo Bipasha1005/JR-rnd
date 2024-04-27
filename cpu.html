@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gaming CPU Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #656566;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #686869;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      /* position: fixed; */
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1 {
+      color: #051729;
+    }
+
+    p {
+      color: #333;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background-color: #f5f7f5;
+      color: rgb(3, 3, 3);
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    .cpu-container {
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      /* height: 100vh; */
+    }
+
+    .cpu-container img {
+      max-width: 100%;
+      height: 199px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="dropdown">
+      <button class="dropbtn">Product</button>
+      <div class="dropdown-content">
+        <a href="mouse.html">Mouse</a>
+        <a href="gpu.html">GPU</a>
+        <a href="cpu.html">CPU</a>
+        <a href="keyboard.html">Keyboard</a>
+        <a href="pendrive.html">Pendrive</a>
+        <a href="power.html" target="_blank">Power Bank</a>
+      </div>
+    </div>
+    <h1>Gaming CPU Blog</h1>
+
+  </header>
+
+  <main>
+    <div class="cpu-container">
+      <img src="CPU.jpg" alt="CPU">
+    </div>
+
+    <h2>Introduction to CPU</h2>
+    <p>The most significant processor in a particular computer is the central processing unit (CPU), sometimes known as the main processor, central processor, or simply processor.Its electronic circuitry carries out input/output (I/O), controlling, arithmetic, and logic functions as well as other computer program instructions. This function is in contrast to that of specialist coprocessors like graphics processing units (GPUs) and external components like main memory and I/O circuitry.<a href="https://en.wikipedia.org/wiki/Central_processing_unit">Read More...</a></p>
+
+    <h2>History of CPU</h2>
+    <p>Older computers, like the ENIAC, were referred to be "fixed-program computers" because they required physical reconfiguration in order to execute new functions. Since 1955, the phrase "central processing unit" has been in usage. The earliest machines that might legitimately be referred to be CPUs were introduced with the introduction of the stored-program computer, since the term "CPU" is commonly defined as a device for software (computer program) execution.<a href="https://en.wikipedia.org/wiki/Central_processing_unit">Read More...</a></p>
+
+    <h2>Structure and implementation</h2>
+    <p>A CPU's circuitry contains an instruction set, which includes basic operations like adding or subtracting numbers. Each instruction is represented by a unique opcode, which is decoded into control signals by a binary decoder. A complete instruction consists of an opcode and additional bits specifying arguments. The arithmetic-logic unit (ALU) performs the mathematical operation for each instruction. Other machine instructions include loading data from memory, branching operations, and floating-point numbers performed by the CPU's floating-point unit (FPU).<a href="https://en.wikipedia.org/wiki/Central_processing_unit">Read More...</a></p>
+
+    <h2>Conclusion</h2>
+    <p>Modern CPUs, like Intel's Performance Counter Monitor technology, make monitoring performance levels and hardware use more complex due to simultaneous multithreading and uncore capabilities, requiring additional hardware logic.<a href="https://en.wikipedia.org/wiki/Central_processing_unit">Read More...</a></p>
+  </main>
+
+  <footer>
+    <p> © Blog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropbtn').click(function () {
+        $('.dropdown-content').toggle();
+      });
+    });
+  </script>
+</body>
+
+</html>
